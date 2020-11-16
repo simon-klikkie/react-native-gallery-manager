@@ -18,6 +18,8 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeArray;
 import com.facebook.react.bridge.WritableNativeMap;
 
+import java.util.HashMap;
+
 public class RNGalleryManagerModule extends ReactContextBaseJavaModule {
 
     public static final String RNGALLERY_MANAGER = "RNGalleryManager";
@@ -203,7 +205,7 @@ public class RNGalleryManagerModule extends ReactContextBaseJavaModule {
         // Android 10 support changes
         // int assetCount = gallery.getInt(gallery.getColumnIndex("assetCount"));
         album.putString("title", albumName);
-        album.putInt("assetCount", "1");
+        album.putInt("assetCount", 1);
         return album;
     }
 
